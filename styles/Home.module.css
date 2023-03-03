@@ -1,0 +1,138 @@
+.cards{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://thumbs.gfycat.com/SeparateSameAmurratsnake-size_restricted.gif');
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card { 
+  width: 20%;
+  margin: 1.5rem;
+  flex-basis: 45%;
+  padding: 2rem;
+  text-align: center;
+  color: lightgrey;
+  background: rgba(23, 44, 60, 0.6);
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: white;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+ #counter {
+    height: 1em;
+    overflow: hidden;
+}
+
+.digits {
+    float:left;
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.digits-first {
+    margin-top: -4em; /* number 4! */
+}
+
+.digits-second {
+    margin-top: 0em; /* number 0! */
+}
+
+.digits-third {
+    margin-top: -4em; /* number 4! */
+}
+
+.digits {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+.luckie {
+    animation-name: luckie;
+}
+
+/* Animations */
+@keyframes luckie {
+    100% {
+        margin-top: -7em;
+    }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
