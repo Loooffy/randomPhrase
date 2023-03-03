@@ -33,14 +33,18 @@ export default function App() {
       }
       `}</style>
       <Head>
-        <title>來點靈感</title>
+        <title>海是要寫一點吧</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.cards}>
-        <div id='verb' className={styles.card} onClick={fetchData}>{ verb }</div>
-        <div id='adjective' className={styles.card} onClick={fetchData}>{ adjective }</div>
-        <div id='noun' className={styles.card} onClick={fetchData}>{ noun }</div>
+      <div className={styles.bg}></div>
+
+      <div className={styles.cardsContainer}>
+        <div className={styles.cards}>
+          <div id='verb' className={styles.card} onClick={fetchData}>{ verb }</div>
+          <div id='adjective' className={styles.card} onClick={fetchData}>{ adjective }</div>
+          <div id='noun' className={styles.card} onClick={fetchData}>{ noun }</div>
+        </div>
       </div>
     </div>
   )
