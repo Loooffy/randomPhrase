@@ -6,6 +6,7 @@
   background-image: url('https://thumbs.gfycat.com/SeparateSameAmurratsnake-size_restricted.gif');
   background-repeat: no-repeat no-repeat;
   background-size: cover;
+  filter: blur(1px);
 }
 
 .cardsContainer {
